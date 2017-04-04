@@ -5,7 +5,7 @@ describe the total count, per vehicle type, that the vehicle type was involved i
 
 **Running the analysis**
 
-1. Clone the repository in CSCloud
+1. Clone the repository in CSCloud using the command: *git clone https://github.uc.edu/varanasa/CloudAssignment4*
 1. Run the command *hadoop jar /opt/hadoop-2.7.1/share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar -file /home/varanasa/mapper.py  -mapper /home/varanasa/mapper.py -file /home/varanasa/reducer.py   -reducer /home/varanasa/reducer.py -input /data/nyc/nyc-traffic.csv  -output /user/varanasa/myoutput*
  - This gives the logs while running Mapper and Reducer scripts.
 1. Then run the command *hadoop fs -cat /user/varanasa/myoutput/**
